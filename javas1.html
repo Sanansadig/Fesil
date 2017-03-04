@@ -1,26 +1,18 @@
 <html> 
     <head> </head>
-</html>
 <body>
-    <script>
-
-    function fesil(type) {
-        if (type=="Qis") {
-            return ("1,2,12") ;
-        } else if (type=="Yaz") {
-            return ("3,4,5");
-        } else if (type=="Yay") {
-            return ("6,7,8");
-        } else if (type=="Payiz") {
-            return ("9,10,11");
+   <script>
+        var mark="";
+        var space=""
+        var n=Number(prompt("enter the number"));
+        for (var i=0; i<n; i++) {
+            mark = mark +"#";
+        for (var j = 0; j < 2*n - (i + 1) * 2; j++) {
+                space = space + "&nbsp;&nbsp;";}
+            
+            document.write(mark + space + mark + "<br>");
+            space = "";
         }
-         else {return ("reqemi duzgun daxil et"); }
-    }
-     var x=fesil ("Qis");
-     console.log (x);
-
-
-     
-    
-      </script>
+   </script>
 </body>
+</html>
